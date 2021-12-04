@@ -205,6 +205,13 @@ def getRating(length, input, mode):
 def getLifeSupportRating(length, input):
     return int(getRating(length, input, 1), base=2) * int(getRating(length, input, 0), base=2)
 
+
+# Day 4
+
+
+
+
+
 def loadInput(filename, multiVars, sep):
     ''' load input from filename and store in list (array)'''
     f = open(filename, "r")
@@ -217,6 +224,8 @@ def loadInput(filename, multiVars, sep):
             input_array.append(values)  
     f.close() 
     return input_array
+
+
 
 def main():
     
