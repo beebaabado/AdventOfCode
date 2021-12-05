@@ -252,5 +252,3 @@ def main():
     lifeRating=getLifeSupportRating(12, input)
     print("Life support rating: ", lifeRating)
 
-if __name__ == "__main__":
-  main()
