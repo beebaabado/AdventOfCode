@@ -1,3 +1,4 @@
+#  Way to complicated...and not getting righ answers for part 2!!!  See day6_puzzles2.py for simplier solution...my brain is fried.
 import matplotlib.pyplot as plt
 import numpy as np
 
