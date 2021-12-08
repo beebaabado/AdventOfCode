@@ -17,6 +17,11 @@ def tryagain(counts, days):
                 counts[8] = num_0     
     return sum(counts)
 
+def evenMoreSimple(counts, days):
+    for day in range(1, days + 1):
+        counts.append(counts.pop(0))
+    return sum(counts)    
+
 def main():
 
     file_example = "day6_example_input.txt"
@@ -38,6 +43,8 @@ def main():
     print ("SCHOOL counts:", school_counts) 
     days = 256
     count = tryagain(school_counts, days)
+    print("Lantern fish count after {} days: {}".format(days, count))
+    count = evenMoreSimple(school_counts, days)
     print("Lantern fish count after {} days: {}".format(days, count))
 
 
