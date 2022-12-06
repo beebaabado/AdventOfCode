@@ -26,8 +26,6 @@ def part2(lines):
       count+=1
   print("COUNT: ", count)
 
-
-
 # ----------------------------
 def main():
     filename = sys.argv[1]
