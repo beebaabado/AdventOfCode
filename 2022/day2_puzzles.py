@@ -46,7 +46,6 @@ def part2():
     me_value = player.index(me.strip()) + 1
     #Play rock paper scissors
     me = me.strip()
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ", me)
     if me == "X":   # need to lose
       print("NEED TO LOSE")
       if opp_value == 3:    #scissors
@@ -55,7 +54,6 @@ def part2():
         me_value = 1       # rock loses to paper
       elif opp_value == 1:  #rock
         me_value = 3	    # scissors loses to rock
-      
       curr_round = me_value
     elif me == "Y":
       print("NEED TO DRAW")

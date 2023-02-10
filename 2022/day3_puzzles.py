@@ -12,17 +12,12 @@ def part1(lines):
     # find common value in each side
        sack = line.strip()  #remove newline
        x = len(sack)
-       print("******************************* len = ", x)
        c1 = sack[:x//2]
        c2 = sack[(x//2):]
-       #print(sack)
-       #print(c1)
-       #print(c2)
        
        comm_c = list(set(c1) & set(c2))[0] 
        print(comm_c)
        priority = alphabet.index(comm_c) + 1
-       print("PRIORITY: ", priority)
        priorities.append(priority)
        print("Priorty: ", comm_c, ", ", priority)
        
